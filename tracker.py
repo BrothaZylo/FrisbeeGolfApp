@@ -20,10 +20,11 @@ def load_and_play_video(video):
         if not ret:
             print("Can't receive frame (stream end?). Exiting ...")
             break
+
         gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    
-        cv.imshow('frame', gray)
-        if cv.waitKey(1) == ord('q'):
+
+        cv.imshow('frame', frame) # Can change frame to grey if grey scaled video is wanted 
+        if cv.waitKey(25) == ord('q'):
             break
     
     cap.release()
@@ -35,9 +36,10 @@ def extract_file():
     pass
 
 def main():
-    pass
+    video_path = "temp_vid/Ace.mp4"
+    load_and_play_video(video_path)
 
 
 if __name__ == "__main__":
-    pass
+    main()
     
