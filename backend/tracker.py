@@ -23,8 +23,8 @@ def load_and_play_video(video):
 
         gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
 
-        cv.imshow('frame', frame) # Can change frame to grey if grey scaled video is wanted 
-        if cv.waitKey(25) == ord('q'):
+        cv.imshow('frame', gray) # Can change frame to grey if grey scaled video is wanted 
+        if cv.waitKey(60) == ord('q'):
             break
     
     cap.release()
