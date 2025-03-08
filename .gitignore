@@ -162,3 +162,32 @@ cython_debug/
 app_planning.ipynb
 
 backend/temp_vid/
+
+# Gradle files
+.gradle/
+build/
+**/build/
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Keystore files
+*.keystore
+*.jks
+
+# Log files
+*.log
+logs/
+
+# Emulator files
+*.lock
+*.log
+*.hprof
+
+# OS-specific files
+.DS_Store
+Thumbs.db
